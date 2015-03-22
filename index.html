@@ -40,25 +40,26 @@
         <section>
             <div class="content-wide">
 
-                <!-- start screen -->
                 <div id="start">
                     <h2>Let this amazing marvel of programming genius settle the argument once and for all!</h2>
                     <h2>Which is your favorite movie?</h2>
                     <img id="ticket" src="img/movie-ticket-sm.png">
                 </div>
 
-                <div id="search">
+                <div id="search" class="hidden">
                     <input type="text" name="query" id="query" value="" placeholder="enter title"> <button id="btnSearch"> <i class="fa fa-search"></i> </button>
                     <div>&mdash; or &mdash;</div>
                     <button id="btnRandom"><i class="fa fa-random"></i> &nbsp; Select Random Movie </button>
                 </div>
 
-                <div id="results">
+                <div id="results" class="hidden">
                     <h2><span id="result-title">Movie Title</span></h2>
                     <h2>(<span id="result-year"></span>)</h2>
-                    <div id="result-poster"><img src="http://placehold.it/10x10"></div>
-                    <div id="result-overview">[overview text]</div>
-                    <div id="result-scores" class="clear">
+                    <div class="clearfix">
+                        <div id="result-poster"><img src="http://placehold.it/10x10"></div>
+                        <div id="result-overview">[overview text]</div>
+                    </div>
+                    <div id="result-scores" class="clearfix">
                         <div id="result-winner"></div>
                         <div>
                             <div class="score-title">Chick Flic<br>Score</div>
@@ -69,31 +70,33 @@
                             <div id="gScore">0%</div>
                         </div>
                     </div>
-                    <div class="clear"><button id="btnReset"><i class="fa fa-arrow-left"></i> &nbsp; Try Another Movie </button></div>
+                    <div><button id="btnReset"><i class="fa fa-arrow-left"></i> &nbsp; Try Another Movie </button></div>
                 </div>
+
             </div>    
         </section>
         <br>
         <section>
             <div class="content-wide">
                 <hr>
-                <div class="live sm-box inverse">
-                    <span id="live">LIVE</span>
-                    <span>one</span>
-                    <span>night</span>
-                    <span>only</span>
-                    <span> <i class="fa fa-bookmark"></i></span>
-                </div>
-                <div class="date sm-box inverse">
-                    <span id="day">&bull;Xxx&bull;</span>
-                    <span id="month">Xxx</span>
-                    <span id="date">xx</span>
-                </div>
-                <div class="how">
-                    <h3>How it Works</h3>
-                    <div> Chick Flick or Guy Movie uses HTML, CSS, JS &amp; jQuery combined with the power of sexist clichés to guess at whether a movie was targeted at a female or male audience. Specifically, it combs through the title and description of the movie to find certain keywords (<em>e.g.</em>, "romantic" or "war").</div>
-                    <div></div>
-                </div>
+                <div class="clearfix">
+                    <div class="live sm-box inverse">
+                        <span id="live">LIVE</span>
+                        <span>one</span>
+                        <span>night</span>
+                        <span>only</span>
+                        <span> <i class="fa fa-bookmark"></i></span>
+                    </div>
+                    <div class="date sm-box inverse">
+                        <span id="day">&bull;Xxx&bull;</span>
+                        <span id="month">Xxx</span>
+                        <span id="date">xx</span>
+                    </div>
+                    <div class="how">
+                        <h3>How it Works</h3>
+                        <div> Chick Flick or Guy Movie uses HTML, CSS, JS &amp; jQuery combined with the power of sexist clichés to guess at whether a movie was targeted at a female or male audience. Specifically, it combs through the title and description of the movie to find certain keywords (<em>e.g.</em>, "romantic" or "war").</div>
+                    </div>
+                </div>    
                 <hr>
             </div>    
         </section>
