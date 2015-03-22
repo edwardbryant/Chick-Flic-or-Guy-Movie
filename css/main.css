@@ -67,7 +67,7 @@ header .lead-in {
   padding: 0.1rem;
   font-weight: bold; }
 header h1 {
-  text-shadow: 4px 4px 4px #aaa;
+  text-shadow: 4px 4px 4px #aaaaaa;
   letter-spacing: 0.6rem;
   text-transform: uppercase;
   font-weight: 800;
@@ -117,7 +117,7 @@ button {
   padding: 14px;
   vertical-align: middle;
   border: solid 2px #b60912;
-  box-shadow: inset 1px 1px 2px 0 #707070; }
+  box-shadow: inset 1px 1px 2px 0 #aaaaaa; }
 #search input:focus {
   outline: none; }
 
@@ -136,7 +136,7 @@ button {
     width: 150px;
     height: 250px;
     border: 2px solid #eee;
-    box-shadow: 8px 8px 4px #707070;
+    box-shadow: 8px 8px 4px #333333;
     float: left; }
   #results #result-overview {
     font: 400 1.2rem/1.4rem "Open Sans", sans-serif;
@@ -151,16 +151,18 @@ button {
     padding: 20px;
     width: 300px; }
   #results #result-winner {
-    padding: 0.8rem 0; }
+    padding: 1rem 0; }
   #results #result-scores > div:nth-child(2) {
     width: 46%;
     float: left;
-    border: 2px solid #333;
+    border: 2px solid #333333;
+    background-color: #aaaaaa;
     padding: 1rem 0; }
   #results #result-scores > div:nth-child(3) {
     width: 46%;
     float: right;
-    border: 2px solid #333;
+    border: 2px solid #333333;
+    background-color: #aaaaaa;
     padding: 1rem 0; }
   #results .score-title {
     font-size: 1.4rem;
@@ -222,85 +224,52 @@ footer {
     margin-bottom: 0.2rem;
     text-align: center; }
 
-/*
+@media (max-width: 600px) {
+  body {
+    padding: 0; }
 
-@media (max-width: 600px) {
-    body {
-        padding: 0;
-    }
-}
-#center-display-btn, #center-display-results {
-    width: 240px;
-}
-@media (max-width: 600px) {
-    header .top-line {
-        font-size: 1.4rem;
-        letter-spacing: 0.4rem;
-    }
-    .top-line > div > span:after {
-        content: "\A";
-        white-space: pre;
-    }
-    header .lead-in {
-        font-size: 1.4rem;
-    }
-    header h1 {
-        font-size: 3.2rem;
-        letter-spacing: 0.4rem;
-    }
+  header .top-line {
+    font-size: 1.4rem;
+    letter-spacing: 0.4rem; }
+  header .top-line > div > span:after {
+    content: "\A";
+    white-space: pre; }
+  header .lead-in {
+    font-size: 1.4rem; }
+  header h1 {
+    font-size: 3.2rem;
+    letter-spacing: 0.4rem; }
     header h1 > span:after {
-        content: "\A";
-        white-space: pre;
-    }
-    header h2 {
-        font-size: 1.4rem;
-    }
-}
-@media (max-width: 600px) {
-    #start h2 {
-        font-size: 1.4rem;
-    }
-}
-@media (max-width: 600px) {
-    #search input {
-        width: 70%;
-    }
-}
+      content: "\A";
+      white-space: pre; }
+  header h2 {
+    font-size: 1.4rem; }
 
-@media (max-width: 600px) {
-    #results {
-        width: 100%;
-    }
-    #result-poster img {
-        float: none;
-    }
-    #result-overview {
-        font: 400 1rem/1.2rem "Open Sans", sans-serif;
-        float: none;
-    }
-    #result-scores {
-        font-size: 2rem;
-        line-height: 2.2rem;
-        width: 220px;
-    }
-    #result-scores > div:nth-child(2) {
-        border: 1px solid #333;
-        padding: 0.6rem 0;
-    }
-    #result-scores > div:nth-child(3) {
-        border: 1px solid #333;
-        padding: 0.6rem 0;
-    }
+  #start h2 {
+    font-size: 1.4rem; }
 
-}
+  #search input {
+    width: 70%; }
 
-@media (max-width: 600px) {
-    .live, .date, .how {
-        float: none;
-        margin: 8px auto;
-        width: 86%;
-    }
-}
-*/
+  #results {
+    width: 100%; }
+    #results #result-poster img {
+      float: none; }
+    #results #result-overview {
+      font: 400 1rem/1.2rem "Open Sans", sans-serif;
+      float: none; }
+    #results #result-scores {
+      font-size: 2rem;
+      line-height: 2.2rem;
+      width: 220px; }
+    #results #result-scores > div:nth-child(2) {
+      padding: 0.6rem 0; }
+    #results #result-scores > div:nth-child(3) {
+      padding: 0.6rem 0; }
+
+  .live, .date, .how {
+    float: none;
+    margin: 8px auto;
+    width: 86%; } }
 
 /*# sourceMappingURL=main.css.map */
