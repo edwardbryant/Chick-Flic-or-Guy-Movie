@@ -242,13 +242,18 @@ button {
 }
 .how {
     font: 400 1.2rem/1.4rem "Open Sans", sans-serif;
-    margin: 1rem 10rem;
+    margin: 1rem auto;
     color: $dark-gray;
+    width: 100%;
     h3 {
         font: 800 2rem/2rem "Open Sans", sans-serif;
         letter-spacing: 1.2rem;
         padding-left: 1.6rem;
         margin: 1rem;
+    }
+    div {
+        margin: auto;
+        max-width: 520px;        
     }
 }
 footer {

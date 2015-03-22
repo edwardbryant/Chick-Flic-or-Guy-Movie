@@ -208,13 +208,17 @@ button {
 
 .how {
   font: 400 1.2rem/1.4rem "Open Sans", sans-serif;
-  margin: 1rem 10rem;
-  color: #333333; }
+  margin: 1rem auto;
+  color: #333333;
+  width: 100%; }
   .how h3 {
     font: 800 2rem/2rem "Open Sans", sans-serif;
     letter-spacing: 1.2rem;
     padding-left: 1.6rem;
     margin: 1rem; }
+  .how div {
+    margin: auto;
+    max-width: 520px; }
 
 footer {
   padding: 1.6rem 4rem 1.6rem 4rem;
