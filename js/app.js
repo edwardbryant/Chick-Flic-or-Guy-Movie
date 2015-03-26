@@ -14,6 +14,15 @@ $(document).ready(function() {
             $('#results').fadeIn(600);
         });
     })
+    $('#query').keydown(function(e) {
+        if (e.keyCode == 13) {
+            var q = $('#query').val()
+            getMovieId(q);
+            $('#search').fadeOut(600, function(){
+                $('#results').fadeIn(600);
+            });
+        }   
+    })
     $('#btnRandom').on('click', function() {
         getMovieIdRandom();
         $('#search').fadeOut(600, function(){
@@ -67,9 +76,7 @@ var cleanText = function(text) {
 };
 var getMovieIdRandom = function() {
     var page = Math.floor((Math.random() * 5) + 1);
-    console.log("random page: " + page);
     var item = Math.floor((Math.random() * 20) + 1) - 1;
-    console.log("random item: " + item);
     var request = {
         api_key: "fed1050696146f0081c5285f5fd827c5",
         page: page,
@@ -83,7 +90,6 @@ var getMovieIdRandom = function() {
     })
     .done(function(result){
         var id = result['results'][item]['id']; 
-        console.log("API movie search randomly selected ID " + id)
         getMovieDetails(id);
     });
 };
@@ -102,12 +108,10 @@ var getMovieId = function(q) {
     })
     .done(function(result){
         var id = result['results'][0]['id'];
-        console.log("API movie search matched (" + q + ") to ID " + id)
         getMovieDetails(id);
     });
 };
 var getMovieDetails = function(id){
-    console.log("API movie detail call on ID " + id);
     var request = {
         api_key: "fed1050696146f0081c5285f5fd827c5",
         language: "en"
