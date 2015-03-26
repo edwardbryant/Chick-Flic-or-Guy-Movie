@@ -2,6 +2,10 @@
 
 A web app that attempts to settle the argument of whether a given movie is a "chick flic" or a "guy movie" (appropriately named, don't you think?). The original version of the app was done as an assignment for Thinkful.com. As stated on the app itself, "Chick Flick or Guy Movie uses HTML, CSS, JS & jQuery combined with the power of sexist clichés to guess at whether a movie was targeted at a female or male audience. Specifically, it combs through the title and description of the movie to find certain keywords (e.g., "romantic" or "war")."  
 
+# Demo 
+
+A demo is available at: [...]
+
 # Design
 
 The design of the web app was based on old boxing posters. 
